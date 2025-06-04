@@ -1,43 +1,49 @@
-library(titanic)
 library(caret)
+library(tidyverse)
+library(titanic)
+library(dplyr)
 
-head(titanic_train)
-tail(titanic_train)
-glimpse(titanic_train)
+df <- titanic_train
+view(df)
 
-## drop NA (Missing Values)
-titanic_train <- na.omit(titanic_train)
-nrow(titanic_train)
+## Preview Data
+head(df)
+tail(df)
+glimpse(df)
+sum(complete.cases(df))
+
+## Prep Data
+df$Pclass <- as.factor(df$Pclass)
+df$Sex <- as.factor(df$Sex)
+df <- drop_na(df)
 
 ## Split Data
 set.seed(42)
-n <- nrow(titanic_train)
+n <- nrow(df)
 id <- sample(1:n, size = n * 0.8)
-train_data <- titanic_train[id, ]
-test_data <- titanic_train[-id, ]
-
-## convert data type
-train_data$Survived <- as.factor(train_data$Survived)
-train_data$Pclass <- as.factor(train_data$Pclass)
-train_data$Sex <- as.factor(train_data$Sex)
+train_data <- df[id, ]
+test_data <- df[-id, ]
 
 ## train model
-log_model <- glm(Survived ~ Pclass + Age + Parch,
-    data = train_data,
-    family = "binomial")
+logis_model <- glm(Survived ~ Sex + Age + Pclass,
+                   data = train_data,
+                   family = "binomial")
 
-summary(log_model)
+log_predict_train <- predict(logis_model,
+                             type = "response")
+train_data$pred <- if_else(log_predict_train > 0.5, 1, 0)
+train_acc <- mean(train_data$Survived == train_data$pred)
 
-## score
-log_predicted <- predict(log_model, 
-          newdata = test_data,
-          type = "response")
-log_predicted_surv <- ifelse(log_predicted >= 0.5 ,1, 0)
+## scoring
+log_predict_test <- predict(logis_model,
+                            newdata = test_data,
+                            type = "response")
+test_data$pred <- if_else(log_predict_test > 0.5, 1, 0)
+test_acc <- mean(test_data$Survived == test_data$pred)
 
 ## Evaluate
-### confusion Matrix
-confus <- table(log_predicted_surv, test_data$Survived,
-      dnn = c("predicted", "actual"))
+confus <- table(train_data$Survived, train_data$pred,
+      dnn = c("actual", "predicted"))
 
 ## Accuracy
 acc <- (confus[1,1] + confus[2,2]) / sum(confus)
