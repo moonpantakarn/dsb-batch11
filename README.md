@@ -18,7 +18,7 @@ This Bootcamp runs about 4 month, 10 sprints
      - xx
  - Data Transformation
    - Project - Data Transformation by using "dplyr" [R coding](link)
-     - Using core functions in dplyr to prepare data to find insight in dataset "nycflights13" in R studio packages.
+     - Using core functions in dplyr to data manipulation to find insight in dataset "nycflights13" in R studio packages.
  - Data Visualization
    - Project - Create Data Visualization using ggplot2 in R [R markdown](link)
      - xx
@@ -31,15 +31,15 @@ This Bootcamp runs about 4 month, 10 sprints
  - Website with WordPress
  - Python
    - Project - Create a 'Pao Ying Chub' game [Python coding](https://colab.research.google.com/drive/1nBXtcb5oFbBnEx-xPdmQDUQkXrtSVD5x)
-     - xx
+     - Using R studio to build a game called pao ying chub, start from creating a objects, then using while loop to determine the number of the game and check data input from user, using if clause to set games condition, finally summarize the game result.
    - Project - Create a 'Pizza Chatbot' game [Python coding](https://colab.research.google.com/drive/1vdCsP0iXRICH9FBkiW2ZSV6fV9-QncfT#scrollTo=TVMrIjsMtnBX)
      - xx
    - Project - Pandas [Python coding](https://colab.research.google.com/drive/1ecspGA4WFKvt_33SvSXLeL6gGGN2Q3Ps#scrollTo=pcFRkobBRj2q&uniqifier=3)
-     - xx
+     - Using core functions in pandas to data transformation to find insights in "sample_store.csv"
    - Project - API [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
-     - xx
-   - Project - OOP [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
-     - xx
+     - Using get requests for getting response then check status code of api to get data from database, then transform data to find insight.
+   - Project - Class ATM [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
+     - 
    - Project - Web Scrapping [Python coding](link)
      - xx
  - Dashboard
