@@ -20,7 +20,7 @@ This Bootcamp runs about 4 month, 10 sprints
    - Project - Data Transformation by using "dplyr" [R coding](link)
      - Using core functions in dplyr to data manipulation to find insight in dataset "nycflights13" in R studio packages.
  - Data Visualization
-   - Project - Create Data Visualization using ggplot2 in R [R markdown](link)
+   - Project - Create Data Visualization using ggplot2 in R [R markdown](https://github.com/moonpantakarn/dsb-batch11/blob/main/r-programming/Data_viz_ggplot_R.PDF)
      - xx
  - Statistics
  - Machine Learning
