@@ -12,7 +12,7 @@ This Bootcamp runs about 4 month, 10 sprints
      - Project - Enriching the employee's data using VLOOKUP and Array formula.
      - Project - Converting TH to EN Date.
      - Project - ID Card Parser using regular expression.
- - Database
+ - SQL Database
  - R Programming
    - Project - Create a 'Pao Ying Chub' game [R coding](link)
      - Using R studio to build a game called pao ying chub, start from creating a objects, then using while loop to determine the number of the game, check data input from user, using if clause to set games condition and finally, summarize the game result.
@@ -40,11 +40,11 @@ This Bootcamp runs about 4 month, 10 sprints
    - Project - Create a 'Pizza Chatbot' game [Python coding](https://colab.research.google.com/drive/1vdCsP0iXRICH9FBkiW2ZSV6fV9-QncfT#scrollTo=TVMrIjsMtnBX)
      - xx
    - Project - Pandas [Python coding](https://colab.research.google.com/drive/1ecspGA4WFKvt_33SvSXLeL6gGGN2Q3Ps#scrollTo=pcFRkobBRj2q&uniqifier=3)
-     - Using core functions in pandas to data transformation to find insights in "sample_store.csv".
+     - Using core functions in pandas to data transformation to find insights in "sample-store.csv".
    - Project - API [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
      - Using get requests for getting response then check status code of api to get data from database, then transform data to find insight.
    - Project - Class ATM [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
-     - 
+     - xx
    - Project - Web Scrapping [Python coding](link)
      - xx
  - Dashboard
