@@ -60,8 +60,8 @@
     lastname,
     country,
     email
-from customers
-where email LIKE 'E%';
+  FROM customers
+  WHERE email LIKE 'E%';
 
 
 
