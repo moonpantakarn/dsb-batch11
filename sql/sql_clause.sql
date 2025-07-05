@@ -63,10 +63,58 @@
   FROM customers
   WHERE email LIKE 'E%';
 
+  --- Between and
+  SELECT 
+    * 
+  FROM INVOICES
+  WHERE invoicedate BETWEEN '2009-01-01' AND '2009-01-31';
 
-
-  
 # JOIN
+  
 # GROUP BY
-# ORDER BY
+  SELECT
+    genre.name,
+    count(*) AS count_genres
+  FROM genres
+  JOIN tracks
+    ON genres.GenreId = tracks.GenreId
+  GROUP BY genre.name;
+  
 # HAVING
+  --- filter values
+  SELECT
+   genres.name,
+   count(*) AS count_genres
+  FROM genres
+  JOIN tracks
+    ON genres.GenreId = tracks.GenreId
+  GROUP BY genres.name
+  HAVING count(*) >= 100;
+
+# ORDER BY
+  --- sort by ascending or descending
+  SELECT
+   genres.name,
+   count(*) AS count_genres
+  FROM genres
+  JOIN tracks
+    ON genres.GenreId = tracks.GenreId
+  GROUP BY genres.name
+  ORDER BY count(*) DESC;
+
+# LIMIT
+  --- show limit rows by n
+  SELECT
+   genres.name,
+   count(*) AS count_genres
+  FROM genres
+  JOIN tracks
+    ON genres.GenreId = tracks.GenreId
+  GROUP BY genres.name
+  ORDER BY count(*) DESC
+  LIMIT 5;
+
+
+
+
+
