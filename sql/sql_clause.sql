@@ -70,7 +70,14 @@
   WHERE invoicedate BETWEEN '2009-01-01' AND '2009-01-31';
 
 # JOIN
-  
+  --- inner join, if you want left or full join, just change in join lines
+  SELECT
+    genre.name,
+    count(*) AS count_genres
+  FROM genres
+  JOIN tracks
+    ON genres.GenreId = tracks.GenreId;
+
 # GROUP BY
   SELECT
     genre.name,
