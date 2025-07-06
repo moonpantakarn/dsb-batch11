@@ -80,12 +80,12 @@ FROM customers;
 
 # GROUP BY
   SELECT
-    genre.name,
+	  genres.name,
     count(*) AS count_genres
   FROM genres
   JOIN tracks
-    ON genres.GenreId = tracks.GenreId
-  GROUP BY genre.name;
+	  ON genres.GenreId = tracks.GenreId
+  GROUP BY genres.name;
   
 # HAVING
   --- filter values
@@ -119,7 +119,7 @@ FROM customers;
     ON genres.GenreId = tracks.GenreId
   GROUP BY genres.name
   ORDER BY count(*) DESC
-  LIMIT 5;
+  LIMIT 3;
 
 
 
