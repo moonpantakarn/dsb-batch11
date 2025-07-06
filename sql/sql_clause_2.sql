@@ -47,10 +47,10 @@ JOIN invoice_january_2009 AS t2
 	ON t1.customerid = t2.customerid;
 
 # SUBQUERIES
-SELECT firstname, lastname, country FROM(SELECT 
-																					* 
-																				FROM Customers
-																				WHERE country = 'USA');
+SELECT firstname, lastname, country FROM(SELECT *
+					FROM customers
+					WHERE lower(country) = 'usa'
+																				
   
 # CREATE_VIEW
 CREATE VIEW invoice_jan_2009 AS
