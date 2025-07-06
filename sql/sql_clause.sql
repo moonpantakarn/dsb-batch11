@@ -21,8 +21,8 @@
     firstname,
     lastname,
     firstname || ' ' || lastname AS fullname,
-    firstname || SUBSTR(lastname, 1, 1) || 'gmail.com' AS email_company
-  FROM customers; 
+    firstname || '.' || SUBSTR(lastname, 1, 3) || '@gmail.com' AS email_company
+FROM customers;
   
 # WHERE CLAUSE
   --- in operator
