@@ -72,7 +72,7 @@ FROM customers;
 # JOIN
   --- inner join, if you want left or full join, just change in join lines
   SELECT
-    genre.name,
+    genres.name,
     count(*) AS count_genres
   FROM genres
   JOIN tracks
