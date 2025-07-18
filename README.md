@@ -35,19 +35,15 @@ This Bootcamp runs about 4 month, 10 sprints
    - Project - Create a 'Pao Ying Chub' game [Python coding](https://colab.research.google.com/drive/1nBXtcb5oFbBnEx-xPdmQDUQkXrtSVD5x)
      - Using Google Colab to build a game called pao ying chub, start from creating a objects, then using while loop to determine the number of the game, check data input from user, using if clause to set games condition and finally, summarize the game result.
    - Project - Create a 'Pizza Chatbot' game [Python coding](https://colab.research.google.com/drive/1vdCsP0iXRICH9FBkiW2ZSV6fV9-QncfT#scrollTo=TVMrIjsMtnBX)
-     - xx
+     - create a pizza chatbot by creating own function such as look menu, choose menu and then buy by using any payment method
    - Project - Pandas [Python coding](https://colab.research.google.com/drive/1ecspGA4WFKvt_33SvSXLeL6gGGN2Q3Ps#scrollTo=pcFRkobBRj2q&uniqifier=3)
      - Using core functions in pandas to data transformation to find insights in "sample-store.csv".
    - Project - API [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
      - Using get requests for getting response then check status code of api to get data from database, then transform data to find insight.
    - Project - Class ATM [Python coding](https://colab.research.google.com/drive/1RrGt091eU3-a8w5uZZVkcL1IeUOpqUIf#scrollTo=kbgTYUftP_6X&uniqifier=1)
-     - xx
-   - Project - Web Scrapping [Python coding](link)
-     - xx
  - Dashboard
-   - Looker Studio
+   - Looker Studio [Dashboard](https://lookerstudio.google.com/reporting/0216190b-264a-4fe6-a18d-36085a36fe2f)
      - Using Looker Studio to create a dashboards consists of top 5 engagement of posts, customer, weekly vs. monthly detail by using "Freefire vs PUBG" dataset. First, connect the data from Freefire vs. PubG.csv in google sheet. Second, create an impactful report and dashboard and finally, share these reports and dashboards with stakeholders. 
-   - Tableau
 
 ## Contact Me
 Email: pantakarn.yon@gmail.com  
